@@ -56,9 +56,27 @@ body {
 }
 
 .publication-venue {
-    color: #555;
-    font-weight: bold;
-    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.5rem;
+    margin: 0 0 1.5rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid #c1e1dc;
+    border-radius: 0.5rem;
+    background: #f0f8f6;
+    color: #225e55;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.publication-venue strong {
+    color: #174a43;
+}
+
+.venue-separator {
+    color: #4d776f;
 }
 
 .publication-affiliations {
@@ -143,5 +161,3 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
-
