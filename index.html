@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="ReefNet is a large-scale, taxonomically enriched dataset and benchmark for coral reef classification, released as part of our NeurIPS 2025 submission.">
-  <meta property="og:title" content="ReefNet: Coral Reef Classification Benchmark" />
-  <meta property="og:description" content="Project page for ReefNet, a globally curated dataset and benchmark with genus-level annotations for hard corals." />
-  <meta property="og:url" content="https://reefnet-project.github.io/reefnet-2025/" />
+  <meta name="description" content="ReefNet is a large-scale dataset and benchmark for fine-grained coral reef recognition, accepted at NeurIPS 2026. Explore the paper, dataset, and ReefNetAI platform.">
+  <meta property="og:title" content="ReefNet: A Large-Scale Dataset and Benchmark for Fine-Grained Coral Reef Recognition" />
+  <meta property="og:description" content="Accepted at NeurIPS 2026. Explore ReefNet, a dataset and benchmark for fine-grained coral reef recognition, and the ReefNetAI platform." />
+  <meta property="og:url" content="https://reefnet-project.github.io/" />
   <meta property="og:image" content="static/images/reefnet_banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:title" content="ReefNet: Coral Reef Dataset & Benchmark">
-  <meta name="twitter:description" content="ReefNet provides a genus-level coral reef benchmark for domain-adaptive marine monitoring.">
+  <meta name="twitter:description" content="Accepted at NeurIPS 2026. A dataset and benchmark for fine-grained coral reef recognition. Explore the paper and ReefNetAI platform.">
   <meta name="twitter:image" content="static/images/reefnet_banner.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="ReefNet, coral reef, coral classification, benchmark, marine ecology, NeurIPS 2025, machine learning, dataset">
+  <meta name="keywords" content="ReefNet, coral reef, coral classification, benchmark, marine ecology, NeurIPS 2026, ReefNetAI, machine learning, dataset">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ReefNet</title>
+  <title>ReefNet | NeurIPS 2026</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,36 +42,57 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ReefNet: A Large-scale, Taxonomically Enriched Dataset and Benchmark for Coral Reef Classification</h1>
+            <h1 class="title is-1 publication-title">ReefNet: A Large-Scale Dataset and Benchmark for Fine-Grained Coral Reef Recognition</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Yahia Battach, Abdulwahab Felemban, Faizan Farooq Khan, Yousef A. Radwan, Xiang Li, Luis Silva, Rhonda Suka, Karla Gonzalez, Fabio Marchese, Ivor D. Williams, Burton H. Jones, Sara Beery, Francesca Benzoni, Mohamed Elhoseiny</span>
-              <span class="author-block">KAUST · MIT · Red Sea Global</span>
-              <span class="author-block" style="display: block !important;">NeurIPS 2025 (Submitted)</span>
+              <span class="author-block"><a href="mailto:abdulwahab.felemban@kaust.edu.sa">Abdulwahab Felemban</a>,</span>
+              <span class="author-block"><a href="mailto:yahia.battach@kaust.edu.sa">Yahia Battach</a>,</span>
+              <span class="author-block"><a href="mailto:faizan.khan@kaust.edu.sa">Faizan Farooq Khan</a>,</span>
+              <span class="author-block"><a href="mailto:fuyq20@fudan.edu.cn">Yuqian Fu</a>,</span>
+              <span class="author-block"><a href="mailto:xhliu.comp@gmail.com">Xuhui Liu</a>,</span>
+              <span class="author-block"><a href="mailto:yesmeenkhattab@gmail.com">Yesmeen M. Khattab</a>,</span>
+              <span class="author-block"><a href="mailto:yo.radwan@nu.edu.eg">Yousef A. Radwan</a>,</span>
+              <span class="author-block"><a href="mailto:xiangli92@ieee.org">Xiang Li</a>,</span>
+              <span class="author-block"><a href="mailto:natalie.dunn@kaust.edu.sa">Natalie Dunn</a>,</span>
+              <span class="author-block"><a href="mailto:susanne.bahr@kaust.edu.sa">Susanne Bahr</a>,</span>
+              <span class="author-block"><a href="mailto:tulliaisotta.terraneo@kaust.edu.sa">Tullia Isotta Terraneo</a>,</span>
+              <span class="author-block"><a href="mailto:fabio.marchese@kaust.edu.sa">Fabio Marchese</a>,</span>
+              <span class="author-block"><a href="mailto:beery@mit.edu">Sara Beery</a>,</span>
+              <span class="author-block"><a href="mailto:burton.jones@kaust.edu.sa">Burton H. Jones</a>,</span>
+              <span class="author-block"><a href="mailto:francesca.benzoni@kaust.edu.sa">Francesca Benzoni</a>,</span>
+              <span class="author-block"><a href="mailto:mohamed.elhoseiny@kaust.edu.sa">Mohamed Elhoseiny</a></span>
             </div>
+            <p class="publication-affiliations">KAUST · MIT</p>
+            <p class="publication-venue">NeurIPS 2026 (Accepted)</p>
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2510.16822" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-file-pdf"></i></span>
                     <span>Paper</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="static/pdfs/reefnet_supplementary.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2510.16822" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                    <span>Supplementary</span>
+                    <span>Paper PDF</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/ReefNet-Project/reefnet-2025" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/ReefNet-Project/reefnet-project.github.io" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/ReefNet/ReefNet-1.0" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://huggingface.co/datasets/ReefNet/ReefNet-1.0" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="ai ai-arxiv"></i></span>
                     <span>Dataset</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://reefnet.kaust.edu.sa/" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-primary">
+                    <span class="icon"><i class="fas fa-water" aria-hidden="true"></i></span>
+                    <span>ReefNetAI</span>
                   </a>
                 </span>
               </div>
@@ -90,7 +110,19 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              ReefNet introduces the first large-scale, taxonomically enriched benchmark for coral reef classification. It features over 32k images annotated at the genus level across 400+ sites globally. We define three core tasks — domain-adaptive classification, coral localization, and temporal monitoring — enabling coral reef research across geographies and seasons. We present baseline results and evaluate state-of-the-art methods across task-specific splits. ReefNet enables scalable ecological analysis and paves the way for domain-adaptive AI models for marine biodiversity monitoring.
+              Coral reefs are rapidly declining under anthropogenic pressures (e.g., climate change), creating an urgent need for scalable and automated monitoring. Progress in data-driven coral analysis, however, is constrained by the scarcity of large-scale datasets with fine-grained labels that are taxonomically consistent across sites and studies.
+            </p>
+            <p>
+              To address this gap, we introduce ReefNet, a large-scale public coral reef image dataset with point-level annotations mapped to the World Register of Marine Species (WoRMS) taxonomy. ReefNet aggregates imagery from 76 curated CoralNet sources and an additional reef site from Al-Wajh (Red Sea), totaling approximately 925K genus-level hard coral annotations.
+            </p>
+            <p>
+              Through expert-driven verification and targeted filtering, we derive a high-confidence benchmark subset with 92% expert agreement over 39 hard-coral label classes, enabling reliable evaluation under realistic label noise and strong class imbalance. Beyond dataset construction, we establish a comprehensive benchmark spanning zero-shot, cross-domain few-shot adaptation, within-source evaluation, and cross-source transfer to the Al-Wajh dataset.
+            </p>
+            <p>
+              Experiments with state-of-the-art vision-language models (VLMs), multimodal large language models (MLLMs), and vision-only backbones reveal substantial degradation in zero-shot and extremely few-shot regimes, while adaptation with in-domain supervision yields large gains yet still leaves a persistent gap under cross-source shift and on long-tail genera.
+            </p>
+            <p>
+              These results highlight fundamental challenges in applying general-purpose multimodal models to biodiversity monitoring and underscore the importance of large-scale, taxonomically grounded, high-quality datasets. ReefNet serves as both a benchmark and a training resource for advancing fine-grained coral reef understanding.
             </p>
           </div>
         </div>
@@ -115,11 +147,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{battach2025reefnet,
-  title={ReefNet: A Large-scale, Taxonomically Enriched Dataset and Benchmark for Coral Reef Classification},
-  author={Battach, Yahia and Felemban, Abdulwahab and Khan, Faizan Farooq and Radwan, Yousef A. and Li, Xiang and Silva, Luis and Suka, Rhonda and Gonzalez, Karla and Marchese, Fabio and Williams, Ivor D. and Jones, Burton H. and Beery, Sara and Benzoni, Francesca and Elhoseiny, Mohamed},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025}
+      <pre><code>@inproceedings{felemban2026reefnet,
+  title={ReefNet: A Large-Scale Dataset and Benchmark for Fine-Grained Coral Reef Recognition},
+  author={Felemban, Abdulwahab and Battach, Yahia and Khan, Faizan Farooq and Fu, Yuqian and Liu, Xuhui and Khattab, Yesmeen M. and Radwan, Yousef A. and Li, Xiang and Dunn, Natalie and Bahr, Susanne and Terraneo, Tullia Isotta and Marchese, Fabio and Beery, Sara and Jones, Burton H. and Benzoni, Francesca and Elhoseiny, Mohamed},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026},
+  url={https://arxiv.org/abs/2510.16822}
 }</code></pre>
     </div>
   </section>
