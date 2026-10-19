@@ -139,25 +139,162 @@ body {
 .publication-body img {
 }
 
-.results-carousel {
-  overflow: hidden;
+.platform-demo {
+  padding-top: 0;
 }
 
-.results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  padding: 20px;
-  font-size: 0;
+.platform-demo video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #102b30;
+  border-radius: 12px;
 }
 
-.results-carousel video {
-  margin: 0;
+.platform-demo figcaption {
+  margin-top: 1rem;
+  color: #4a4a4a;
 }
 
-.slider-pagination .slider-page {
-  background: #000000;
-}
-
-.eql-cntrb { 
+.eql-cntrb {
   font-size: smaller;
+}
+
+.publication-affiliations span {
+  display: block;
+  margin-top: 0.35rem;
+}
+
+.publication-authors sup {
+  margin-left: 0.1rem;
+  font-size: 0.65em;
+  color: #4a4a4a;
+}
+
+.equal-contribution {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.abstract-text {
+  text-align: left;
+  line-height: 1.75;
+}
+
+.dataset-overview {
+  padding-top: 0;
+}
+
+.dataset-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.dataset-stat {
+  padding: 1.5rem 1rem;
+  border: 1px solid #c1e1dc;
+  border-radius: 12px;
+  background: #f0f8f6;
+  text-align: center;
+}
+
+.dataset-stat dt {
+  font-weight: 600;
+  color: #225e55;
+}
+
+.dataset-stat strong {
+  display: block;
+  margin: 0.5rem 0;
+  color: #174a43;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.dataset-stat dd span {
+  font-size: 0.9rem;
+}
+
+.dataset-note {
+  margin-top: 1rem;
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.citation-box {
+  border: 1px solid #e2e5e7;
+  border-radius: 10px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.citation-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e5e7;
+}
+
+.citation-toolbar .button {
+  min-height: 2.25rem;
+  border-radius: 6px;
+}
+
+.copy-status {
+  margin-top: 0.75rem;
+  color: #225e55;
+  font-size: 0.9rem;
+}
+
+.copy-status:empty {
+  display: none;
+}
+
+#BibTeX pre {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+button[hidden] {
+  display: none;
+}
+
+a:focus-visible, button:focus-visible, pre:focus-visible {
+  outline: 3px solid #167b8a;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-title.title {
+    font-size: clamp(1.7rem, 6vw, 2.25rem);
+    line-height: 1.2;
+  }
+
+  .publication-authors.is-size-5 {
+    font-size: 1rem !important;
+    line-height: 1.7;
+  }
+
+  .publication-affiliations {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .hero-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .dataset-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  padding: 1.5rem;
 }
